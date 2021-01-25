@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Registro de calorías</title>
+        <link rel="StyleSheet" href="CSS/formulariokcal.css"> 
+        <script src="JS/dinamico.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Registro de consumo de calorías</h1>
+        </header>
+        <main>
+            <form>             
+                <fieldset>
+                    <h2>Registra tu consumo diario de calorías</h2>   
+                    
+                    <legend>Registro calorías</legend>     
+                    <div id="l"> 
+                        <label for ="nombre">Nombres:</label></br> 
+                        <label for ="apellido">Apellidos:</label></br> 
+                        <label form ="dia" >Día:</label></br> 
+                        <label>¿Haces ejercicio este día?</label></br>
+                        <div>                        
+                            <label for ="comida">Alimento:</label></br> 
+                            <label for ="gramos">Peso consumido en gramos:</label></br> 
+                            <label for ="kcal">Calorías consumidas:</label></br>                                                                     
+                        </div>
+                    </div>  
+                    
+                    <div id="r">
+                        <input name="fname:" type="text" id = "nombre"  pattern="[A-Za-zÀ-ÿ\u00f1\u00d1]{2,40}" title="Introduzca entre 2 y 40 letras" required></br>                    
+                        <input name="lname:" type="text" id = "apellido"  pattern="[A-Za-zÀ-ÿ\u00f1\u00d1]{2,40}" title="Introduzca entre 2 y 40 letras" required></br>                    
+                        <select name="dia">
+                            <option value="Lunes">Lunes</option>
+                            <option value="Martes">Martes</option>
+                            <option value="Miercoles">Miércoles</option>
+                            <option value="Jueves">Jueves</option>
+                            <option value="Viernes">Viernes</option>
+                            <option value="Sabado">Sábado</option>                        
+                            <option value="Domingo">Domingo</option>                                                
+                        </select><br>  
+                        <input name="ejercicio" type="radio" required>Sí
+                        <input name="ejercicio" type="radio" required>No   
+                        <div>
+                            <input name="alimento:" type="text" id = "comida" pattern="[A-Za-zÀ-ÿ\u00f1\u00d1]{3,20}" title="Introduzca entre 3 y 20 letras" required></br>            
+                            <input name="peso_gr:" type="number" min="0" id = "gramos" required class="ip"></br>                    
+                            <input name="calorias:" type="number" min="0" id = "kcal" required class="ip"></br>   
+
+                            <input name="boton" type="button" value="+" id="btnP0"  onclick="crearAlimento(), desaparecer()">
+                            <input name="boton" type="button" value="-" id="btnN0"  onclick="eliminarAlimento(), aparecer()">
+                            
+                            <input name="enviar" type="submit" id="enviar"  value="Enviar">
+                        </div>                     
+                    </div>             
+                    
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

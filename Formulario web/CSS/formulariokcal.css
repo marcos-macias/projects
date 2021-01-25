@@ -1,0 +1,93 @@
+body{
+    /*background-image: url("../images/food4.jpg");*/
+    background-color: cornsilk;
+    background-size: 95%;
+}
+h1{
+    margin-top: 2%;
+    font-size: 50px;
+    color:#908FA8;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 2px #1D1D1D   ;
+}
+form{
+    background: #E7ECF9;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 2%;       
+}
+header{
+    text-align: center;
+}
+legend{
+    display: none;
+}
+h2{
+    color: #292929;
+    /*background-color: blanchedalmond;*/
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: .5px #1D1D1D   ;
+    display: block;
+    /*margin-left: 30%;*/
+}
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 2.5%;
+    padding-right: 0%;    
+    margin: 2.3%;
+    margin-right: 0%;        
+}
+input{
+    /*position: absolute;
+    right: 38%;*/
+    margin: 4.5%;     
+}
+.amplio{
+    padding-right: 8%;
+}
+#btnN0{
+    display: none;
+}
+
+select{
+    /*display: inline-block;    
+    margin-left: 5% ;
+    padding-left: 1%;
+    padding-right: 7%;*/
+    margin: 7.5%;
+     
+}
+#r{
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    right: 10%;
+    float: right;
+    text-align: left;
+    /*background: peru;*/
+}
+#l{
+    width: 44%;    
+    display: inline-block;
+    position: relative;
+    left: 4%;
+    float: left;
+    text-align: end;
+    /*background: peru;*/
+}
+
+.sectfood{
+    display: inline-block;
+    background: white;
+}
+fieldset{
+    padding: 5%;
+    text-align: center;
+}
+#enviar{
+    position: absolute;
+    bottom: 1%;
+    right: 4%;
+}
+
